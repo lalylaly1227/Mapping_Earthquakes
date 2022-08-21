@@ -17,7 +17,7 @@ let satelliteStreets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/sate
 
 // Create a base layer that holds both maps.
 let baseMaps = {
-    Street: streets,
+    "Street": streets,
     "Satellite Streets": satelliteStreets
 };
 
@@ -35,13 +35,13 @@ L.control.layers(baseMaps).addTo(map);
 // streets.addTo(map);
 
 // Accessing the Toronto neighborhoods GeoJSON URL.
-let torontoHoods = "https://raw.githubusercontent.com/<GitHub_name>/Mapping_Earthquakes/main/torontoNeighborhoods.json";
+let torontoHoods = "https://raw.githubusercontent.com/lalylaly1227/Mapping_Earthquakes/main/torontoNeighborhoods.json";
 
 // // Accessing the airport GeoJSON URL
 // let airportData = "https://raw.githubusercontent.com/lalylaly1227/Mapping_Earthquakes/main/majorAirports.json";
 
 // // Accessing the Toronto airline routes GeoJSON URL.
-// let torontoData = "https://raw.githubusercontent.com/<GitHub_name>/Mapping_Earthquakes/main/torontoRoutes.json";
+// let torontoData = "https://raw.githubusercontent.com/lalylaly1227/Mapping_Earthquakes/main/torontoRoutes.json";
 
 // Grabbing our GeoJSON data.
 d3.json(torontoHoods).then(function(data) {
