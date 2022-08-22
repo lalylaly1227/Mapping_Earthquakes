@@ -109,7 +109,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
   // Then add all the details for the legend.
   legend.onAdd = function () {
     let div = L.DomUtil.create("div", "info legend");
-  };
+ 
   const magnitudes = [0, 1, 2, 3, 4, 5];
   const colors = [
     "#98ee00",
@@ -128,7 +128,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
       magnitudes[i] + (magnitudes[i + 1] ? "&ndash;" + magnitudes[i + 1] + "<br>" : "+");
   }
   return div;
-
+};
 legend.addTo(map);
 
 // Then we add the earthquake layer to our map.
