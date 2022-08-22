@@ -8,5 +8,7 @@ The map can be viewed and it is interactive. Each earthquake is visually represe
 
 The viewer is able to toggle between the three layers to filter the data. These layers include: All Earthquakes, Tectonic Plates, and Major Earthquakes (greater than 4.5 magnitude)
 
+![Challenge Results](https://user-images.githubusercontent.com/105124485/185832622-ade28386-243e-497c-a180-69c4c7a3b76d.png)
+
 ## Summary
 To create the maps we used the JavaScript and the D3.js libraries and GeoJSON data to retrieve the coordinates and magnitudes of the earthquakes. We then needed the Leaflet library to plot the data on a Mapbox map through an API request and create interactive maps for the earthquake data. 
